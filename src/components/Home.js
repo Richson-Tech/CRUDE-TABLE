@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { Button, Table } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Exployees from "./Employess";
 import Employees from "./Employess";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -58,11 +57,13 @@ function Home() {
                           >
                             EDIT
                           </Button>
+                          </Link>
                           &nbsp;
+                          
                           <Button onClick={() => handleDelete(item.id)}>
                             DELETE
                           </Button>
-                        </Link>
+                        
                       </td>
                     </tr>
                   );
